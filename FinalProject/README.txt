@@ -1,0 +1,1 @@
+These games are created by Nicole Vaughan, copyright 2024.

@@ -1,0 +1,13 @@
+body{
+    font-family: "Josefin Sans";
+}
+footer{
+    background-color: #17222D;
+    padding: 10px;
+    text-align: center;
+    color: whitesmoke;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
