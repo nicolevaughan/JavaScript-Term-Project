@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta  charset="utf-8">
-<title>Dress for Adventure!</title>
+<title>Assemble Your Party for Adventure!</title>
 <link href="css/index.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
 
 
 body{
-    background-image:url('media/gameBackground.jpg');
+    background-image:url('media/game1Background.png');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Josefin Sans";
@@ -98,9 +98,38 @@ function myFunction() {
   }
 }
 </script>
+
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"><script>
+   $(function()
+     {
+         $("#MoveMe1").draggable();
+         $("#MoveMe2").draggable();
+         $("#MoveMe3").draggable();
+         $("#MoveMe4").draggable();
+         $("#MoveMe5").draggable();
+         $("#MoveMe6").draggable();
+         
+                                
+         
+     });
+</script>
+
 <h1>Scene of Adventure</h1>
 <br>
 <h2>Set the scene for adventure by dragging and dropping!</h2>
+
+<section>
+  <p id="MoveMe2"><img src="media/sword.png" /></p>
+  <p id="MoveMe3"><img src="media/wizard.png" /></p>          
+  <p id="MoveMe4"><img src="media/witch.png" /></p>
+  <p id="MoveMe5"><img src="media/knight.png" /></p>
+  
+  <p id="MoveMe1"><img src="media/bird.png" /></p>
+   
+</section>
+
 <footer>© Nicole Vaughan 2024</footer>
 
 </html>
