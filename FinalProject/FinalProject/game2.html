@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta  charset="utf-8">
+<title>Choose Your Own Adventure!</title>
+<link href="css/index.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<style>
+
+
+body{
+    background-image:url('media/gameBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Josefin Sans";
+}
+.topnav {
+  overflow: hidden;
+  background-color: #17222D;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #D9A171;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #17222D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="gameMainPage.html" class="active">Home</a>
+  <a href="game1.html">Scene of Adventure</a>
+  <a href="game2.html">Adventurer's Choice</a>
+  <a href="game3.html">Journey to Adventure</a>
+  <a href="README.txt">README.txt</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h2></h2>
+  <p></p>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  </head>
+  <style>
+     body {
+      font-size: 20px;
+      font-family: "Roboto mono";
+      background-color: black;
+      color: black;
+     } 
+     a {
+      color: greenyellow;
+      
+      text-decoration: none;
+     }
+     a:hover {
+      text-decoration: underline;
+      
+     }
+     h1 {
+      font-family: "Roboto mono";
+      font-size: 60px;
+      padding: 0 0 0 0;
+      margin: 0 0 0 0;
+      color: yellowgreen;
+      background-color: black;
+      width: 1060px;
+      
+     }
+     #scene {
+      background-image: url("media/CYOAbackground.jpg");
+      height: 660px;
+      width: 1060px;
+      
+     }
+     #choices {
+      color: greenyellow;
+      
+      background-color: black;
+      opacity: .75;
+      position: absolute;
+      top: 200px;
+      left: 130px;
+      width: 800px;
+      padding: 15 15 15 15;
+     }
+     #choiceA {
+      color: yellowgreen;
+      text-align: left;
+      background-color: black;
+      opacity: .75;
+      position: absolute;
+      top: 290px;
+      left: 130px;
+      width: 800px;
+      padding: 10 10 10 10;
+     }
+     #choiceB {
+      color: greenyellow;
+      text-align: right;
+      background-color: black;
+      opacity: .75;
+      position: absolute;
+      top: 330px;
+      left: 130px;
+      width: 800px;
+      padding: 10 10 10 10;
+     }
+  
+  </style>
+  <body>
+  <h1> Adventurer's Choice </h1>
+  
+  <div id="scene">
+      <p id="choices">
+      You wake up from a vivid dream of dungeons, dragons, battle, and treasure!
+      You feel different than most days.<br>
+      Are you ready....to go on an Adventure?<br>
+      </p>
+      <br>
+      <p id="choiceA"> <a href="ReadyForAdventure.html">Yes, I'm Ready!</a> </p> <p id="choiceB"> <a href="BackToBed.html">Go back to bed.</a> </p>
+      
+  </div>
+  
+  </body><footer>© Nicole Vaughan 2024</footer>
+</html>
